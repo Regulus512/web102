@@ -6,7 +6,27 @@
 
 #header {
     height: 120px;
-    background-color: orange;
+    overflow: hidden;
+    /* background-color: orange; */
+}
+
+#header ul{
+    overflow: hidden;
+    list-style: none;
+}
+
+li.item {
+    height:53px;
+    /* display: inline-block; */
+    float: left;
+    margin:67px 80px 0;
+    /* margin-top:67px; */
+    /* background-color:green; */
+}
+li.logo{
+    /* background-image:url("/img/logo.png"); */
+    float: left;
+    margin:33px 0 0;
 }
 
 #main_picture {
@@ -45,11 +65,11 @@
 
 #icon_box>p {
     width: 250px;
-    
-/**/
 
-    font-size:14px;
-    
+    /**/
+
+    font-size: 14px;
+
     border: solid blue 1px;
     background-color: aqua;
 }
