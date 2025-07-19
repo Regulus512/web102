@@ -2,79 +2,117 @@
     font-family: Arial;
     margin: 0 auto;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+}
+li:hover{
+    color:red;
+    text-decoration: black underline;
+    cursor: pointer;
 }
 
+/* header */
 #header {
     height: 120px;
     overflow: hidden;
     /* background-color: orange; */
 }
 
-#header ul{
+#header ul {
+    width:1150px;
+    margin: 0 auto;
     overflow: hidden;
-    list-style: none;
+    /* background-color: greenyellow; */
 }
 
 li.item {
-    height:53px;
+    height: 53px;
     /* display: inline-block; */
     float: left;
-    margin:67px 80px 0;
-    /* margin-top:67px; */
+    margin: 67px 40px 0;
     /* background-color:green; */
 }
-li.logo{
-    /* background-image:url("/img/logo.png"); */
+
+li.logo {
     float: left;
-    margin:33px 0 0;
+    margin: 33px 40px 0;
 }
 
+/* main picture */
 #main_picture {
     height: 464px;
     background-image: url("/img/main.png");
     background-size: cover;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
+/* icon title */
 #icon_title {
-    background-color: yellow;
     text-align: center;
     padding: 30px 0;
+    /* background-color: yellow; */
 }
 
-#icon_title>#text1 {
+#icon_title>span:nth-child(1) {
     font-size: 10px;
+    /* color:red; */
 }
 
-#icon_title>#text2 {
+#icon_title>span:nth-child(2) {
     font-size: 20px;
     font-weight: bold;
+    /* color:blue; */
 }
 
-#icon_title p {
-    text-align: center;
-}
-
+/* icon box */
 #icon_box {
     width: 1240px;
-    height: 400px;
     padding: 10px 0;
     text-align: center;
-    background-color: rgba(255, 0, 0, 0.284);
+    overflow: hidden;
+    /* background-color: rgba(255, 0, 0, 0.284); */
 }
 
 #icon_box>p {
     width: 250px;
-
-    /**/
-
+    height: 150px;
+    float: left;
     font-size: 14px;
+    line-height: 20px;
+    margin: 10px 30px;
 
-    border: solid blue 1px;
-    background-color: aqua;
+    border-bottom: dotted gray 2px;
+
+    /* background-color: green; */
 }
 
+/* chefs */
 #chefs {
     height: 304px;
-    background-color: rgb(ec, ec, ec);
+
+    background-color: #ececec
+}
+
+#chefs>div.inner {
+    width: 771px;
+    /* background-color: tomato; */
+}
+
+div.inner>div {
+    width: 500px;
+    /* display:inline-block; */
+    margin:82px 30px 0 0;
+    float:left;
+    vertical-align: bottom;
+    /* background-color: cornflowerblue; */
+}
+
+div.inner h2{
+    text-decoration: underline;
+    line-height: 40px;
+    /* color: red; */
+}
+div.inner p {
+    line-height: 25px;
 }
