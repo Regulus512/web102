@@ -96,7 +96,8 @@ li.logo {
 
 #chefs>div.inner {
     width: 771px;
-    /* background-color: tomato; */
+    height: 304px;
+    background-color: tomato;
 }
 
 div.inner>div {
@@ -104,8 +105,16 @@ div.inner>div {
     /* display:inline-block; */
     margin:82px 30px 0 0;
     float:left;
-    vertical-align: bottom;
-    /* background-color: cornflowerblue; */
+    background-color: cornflowerblue;
+}
+
+div.inner>.imageholder{
+    background-image: url('./img/chef.png');
+    width: 241px; height: 304px;
+    margin-top: 0;
+    margin-right: 0;
+    float: left;
+    background-color:beige;
 }
 
 div.inner h2{
