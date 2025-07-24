@@ -1,16 +1,10 @@
 * {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     padding: 0;
     list-style: none;
     text-decoration: none;
     color: black;
-}
-
-li:hover {
-    color: red;
-    text-decoration: black underline;
-    cursor: pointer;
 }
 
 /* ----- about ----- */
@@ -34,7 +28,7 @@ li:hover {
 
 .left>.box {
     margin-top: 250px;
-    background-color: rgba(0, 100, 0, 0.6);
+    background-color: #44742eb3;
     line-height: 20px;
 }
 
@@ -64,20 +58,23 @@ li:hover {
 
 .box:nth-child(2n) {
     background-color: #d7864f;
+    /* color:blue; */
 }
 
-.box span{
+.box span {
     font-weight: bold;
-    font-size:larger;
+    font-size: larger;
     /* background:red; */
 }
-p>.title{
-    font-size:30px;
+
+p>.title {
+    font-size: 30px;
     /* background:yellow; */
 }
+
 .box>p {
-    width:210px;
-    height:210px;
+    width: 210px;
+    height: 210px;
     /* background-color: pink; */
 }
 
@@ -92,29 +89,46 @@ p>.title{
     width: 750px;
     height: 500px;
     margin-left: 0;
-    float:left;
+    float: left;
     /* background-color: white; */
 }
 
-#box_all>.box_right{
-    width:210px;
-    height:460px;
+#box_all>.box_right {
+    width: 210px;
+    height: 460px;
     padding: 20px;
-    float:left;
+    float: left;
     background-color: #d7ba8e;
 }
 
 #footer {
     width: 1000px;
     height: 40px;
+    font-size:14px;
     background-color: #a9a9a9;
+    /*margin collapse*/
+    overflow: hidden;
 }
 
-#footer>div {
+#footer>ul {
     width: 750px;
     height: 40px;
-    margin-left: 60px;
-    background-color: white
+    margin-left: 40px;
+    margin-top: 8px;
+    /* background-color: white; */
+}
+
+#footer li {
+    float: left;
+    margin-left: 10px;
+    /* background-color:wheat; */
+}
+
+#footer li.divide:after {
+    content: "|";
+    margin-left: 10px;
+    color: orange;
+    font-weight: bold;
 }
 
 /* ----- index ----- */
@@ -123,6 +137,12 @@ p>.title{
     height: 120px;
     overflow: hidden;
     /* background-color: orange; */
+}
+
+#header li:hover {
+    color: red;
+    text-decoration: black underline;
+    cursor: pointer;
 }
 
 #header ul {
