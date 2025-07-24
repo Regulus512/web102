@@ -7,129 +7,6 @@
     color: black;
 }
 
-/* ----- about ----- */
-#top {
-    width: 1000px;
-    height: 500px;
-    margin-top: 30px;
-
-    /* background-color: green; */
-}
-
-#top>.left {
-    width: 750px;
-    height: 500px;
-    float: left;
-    /* margin collapse */
-    overflow: hidden;
-    margin: 0;
-    background-image: url("/img/chef_about.png");
-}
-
-.left>.box {
-    margin-top: 250px;
-    background-color: #44742eb3;
-    line-height: 20px;
-}
-
-#top>.right {
-    width: 250px;
-    height: 500px;
-    float: left;
-    /* background-color: aqua; */
-}
-
-.right>.right_item {
-
-    width: 250px;
-    height: 250px;
-    /* background-color: pink; */
-    /* border: solid green 1px; */
-}
-
-.box {
-    float: left;
-    width: 210px;
-    height: 210px;
-    padding: 20px;
-    background-color: #6c5f4f;
-    line-height: 18px;
-}
-
-.box:nth-child(2n) {
-    background-color: #d7864f;
-    /* color:blue; */
-}
-
-.box span {
-    font-weight: bold;
-    font-size: larger;
-    /* background:red; */
-}
-
-p>.title {
-    font-size: 30px;
-    /* background:yellow; */
-}
-
-.box>p {
-    width: 210px;
-    height: 210px;
-    /* background-color: pink; */
-}
-
-
-#box_all {
-    width: 1000px;
-    height: 500px;
-    background-color: skyblue;
-}
-
-#box_all>.box_left {
-    width: 750px;
-    height: 500px;
-    margin-left: 0;
-    float: left;
-    /* background-color: white; */
-}
-
-#box_all>.box_right {
-    width: 210px;
-    height: 460px;
-    padding: 20px;
-    float: left;
-    background-color: #d7ba8e;
-}
-
-#footer {
-    width: 1000px;
-    height: 40px;
-    font-size:14px;
-    background-color: #a9a9a9;
-    /*margin collapse*/
-    overflow: hidden;
-}
-
-#footer>ul {
-    width: 750px;
-    height: 40px;
-    margin-left: 40px;
-    margin-top: 8px;
-    /* background-color: white; */
-}
-
-#footer li {
-    float: left;
-    margin-left: 10px;
-    /* background-color:wheat; */
-}
-
-#footer li.divide:after {
-    content: "|";
-    margin-left: 10px;
-    color: orange;
-    font-weight: bold;
-}
 
 /* ----- index ----- */
 /* header */
@@ -252,4 +129,130 @@ div.inner h2 {
 
 div.inner p {
     line-height: 25px;
+}
+
+
+
+/* ----- about ----- */
+#top {
+    width: 1000px;
+    height: 500px;
+    margin-top: 30px;
+
+    /* background-color: green; */
+}
+
+#top>.left {
+    width: 750px;
+    height: 500px;
+    float: left;
+    /* margin collapse */
+    overflow: hidden;
+    margin: 0;
+    background-image: url("/img/chef_about.png");
+}
+
+.left>.box {
+    margin-top: 250px;
+    background-color: #44742eb3;
+    line-height: 20px;
+}
+
+#top>.right {
+    width: 250px;
+    height: 500px;
+    float: left;
+    /* background-color: aqua; */
+}
+
+.right>.right_item {
+
+    width: 250px;
+    height: 250px;
+    /* background-color: pink; */
+    /* border: solid green 1px; */
+}
+
+.box {
+    float: left;
+    width: 210px;
+    height: 210px;
+    padding: 20px;
+    background-color: #6c5f4f;
+    line-height: 18px;
+}
+
+.box:nth-child(2n) {
+    background-color: #d7864f;
+    /* color:blue; */
+}
+
+.box span {
+    font-weight: bold;
+    font-size: larger;
+    /* background:red; */
+}
+
+p>.title {
+    font-size: 30px;
+    /* background:yellow; */
+}
+
+.box>p {
+    width: 210px;
+    height: 210px;
+    /* background-color: pink; */
+}
+
+
+#box_all {
+    width: 1000px;
+    height: 500px;
+    background-color: skyblue;
+}
+
+#box_all>.box_left {
+    width: 750px;
+    height: 500px;
+    margin-left: 0;
+    float: left;
+    /* background-color: white; */
+}
+
+#box_all>.box_right {
+    width: 210px;
+    height: 460px;
+    padding: 20px;
+    float: left;
+    background-color: #d7ba8e;
+}
+
+#footer {
+    width: 1000px;
+    height: 40px;
+    font-size:14px;
+    background-color: #a9a9a9;
+    /*margin collapse*/
+    overflow: hidden;
+}
+
+#footer>ul {
+    width: 750px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 8px;
+    /* background-color: white; */
+}
+
+#footer li {
+    float: left;
+    margin-left: 10px;
+    /* background-color:wheat; */
+}
+
+#footer li.divide:after {
+    content: "|";
+    margin-left: 10px;
+    color: orange;
+    font-weight: bold;
 }
