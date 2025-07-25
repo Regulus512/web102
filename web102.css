@@ -12,7 +12,6 @@
 /* header */
 #header {
     height: 120px;
-    overflow: hidden;
     /* background-color: orange; */
 }
 
@@ -25,20 +24,18 @@
 #header ul {
     width: 1150px;
     margin: 0 auto;
-    overflow: hidden;
     /* background-color: greenyellow; */
 }
 
 li.item {
     height: 53px;
-    /* display: inline-block; */
-    float: left;
-    margin: 67px 40px 0;
+    display: inline-block;
+    margin: 67px 39px 0;
     /* background-color:green; */
 }
 
 li.logo {
-    float: left;
+    display:inline-block;
     margin: 33px 40px 0;
 }
 
@@ -73,17 +70,17 @@ li.logo {
     width: 1240px;
     padding: 10px 0;
     text-align: center;
-    overflow: hidden;
     /* background-color: rgba(255, 0, 0, 0.284); */
 }
 
 #icon_box>p {
     width: 250px;
     height: 150px;
-    float: left;
+    /* float: left; */
+    display: inline-block;
     font-size: 14px;
     line-height: 20px;
-    margin: 10px 30px;
+    margin: 10px 25px;
 
     border-bottom: dotted gray 2px;
 
@@ -93,7 +90,6 @@ li.logo {
 /* chefs */
 #chefs {
     height: 304px;
-
     background-color: #ececec
 }
 
@@ -101,24 +97,27 @@ li.logo {
     width: 771px;
     height: 304px;
     /* background-color: tomato; */
+    overflow:hidden;
 }
 
-div.inner>div {
-    width: 500px;
-    /* display:inline-block; */
-    margin: 82px 30px 0 0;
-    float: left;
+div.inner>div.left {
+    width:500px;
+    height:200px;
+    float:left;
+    margin-top: 75px;
+    /* display:inline-block;
+    vertical-align: middle; */
+    margin-right: 20px;
     /* background-color: cornflowerblue; */
 }
 
 div.inner>.imageholder {
-    background-image: url('./img/chef.png');
     width: 241px;
     height: 304px;
-    margin-top: 0;
-    margin-right: 0;
-    float: left;
-    /* background-color:beige; */
+    float:left;
+    /* display:inline-block;
+    vertical-align: middle; */
+    background-image: url('./img/chef.png');
 }
 
 div.inner h2 {
@@ -138,56 +137,53 @@ div.inner p {
     width: 1000px;
     height: 500px;
     margin-top: 30px;
-
+    font-size: 0;
     /* background-color: green; */
 }
 
 #top>.left {
     width: 750px;
     height: 500px;
-    float: left;
-    /* margin collapse */
-    overflow: hidden;
-    margin: 0;
+    display:inline-block;
+    /* float: left; */
     background-image: url("/img/chef_about.png");
+    /*margin collapse*/
+    overflow:hidden;
 }
 
-.left>.box {
+.left>.leftbox {
+    width:210px; height:210px;
+    padding: 20px;
+    display:inline-block;
     margin-top: 250px;
     background-color: #44742eb3;
     line-height: 20px;
+    font-size: 18px;
 }
 
 #top>.right {
     width: 250px;
-    height: 500px;
-    float: left;
+    height: 250px;
+    display:inline-block;
+    /* float: left; */
     /* background-color: aqua; */
 }
 
 .right>.right_item {
-
     width: 250px;
     height: 250px;
     /* background-color: pink; */
     /* border: solid green 1px; */
 }
 
-.box {
-    float: left;
-    width: 210px;
-    height: 210px;
-    padding: 20px;
-    background-color: #6c5f4f;
-    line-height: 18px;
-}
+
 
 .box:nth-child(2n) {
     background-color: #d7864f;
     /* color:blue; */
 }
 
-.box span {
+.left span, .box span {
     font-weight: bold;
     font-size: larger;
     /* background:red; */
@@ -204,8 +200,20 @@ p>.title {
     /* background-color: pink; */
 }
 
+.box {
+    float: left;
+    /* display:inline-block; */
+    width: 210px;
+    height: 210px;
+    padding: 20px;
+    
+    background-color: #6c5f4f;
+    font-size:medium;
+    line-height: 18px;
+}
 
 #box_all {
+    font-size:0;
     width: 1000px;
     height: 500px;
     background-color: skyblue;
@@ -216,36 +224,40 @@ p>.title {
     height: 500px;
     margin-left: 0;
     float: left;
-    /* background-color: white; */
+    /* display:inline-block; */
+    background-color: white;
 }
 
 #box_all>.box_right {
+    font-size:medium;
     width: 210px;
     height: 460px;
     padding: 20px;
+    
     float: left;
+    /* display:inline-block; */
     background-color: #d7ba8e;
 }
 
 #footer {
     width: 1000px;
-    height: 40px;
+    height: 32px;
     font-size:14px;
+    padding-top:8px;
     background-color: #a9a9a9;
-    /*margin collapse*/
-    overflow: hidden;
 }
 
 #footer>ul {
     width: 750px;
     height: 40px;
     margin-left: 40px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
     /* background-color: white; */
 }
 
 #footer li {
-    float: left;
+    /* float: left; */
+    display:inline-block;
     margin-left: 10px;
     /* background-color:wheat; */
 }
